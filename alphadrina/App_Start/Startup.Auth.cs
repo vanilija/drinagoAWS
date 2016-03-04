@@ -60,7 +60,7 @@ namespace alphadrina
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
-            //    ClientId = "",
+            ///   ClientId = "",
             //    ClientSecret = ""
             //});
         }

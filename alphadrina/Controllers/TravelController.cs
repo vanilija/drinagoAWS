@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Drinago.Controllers
+namespace alphadrina.Controllers
 {
     public class TravelController : Controller
     {

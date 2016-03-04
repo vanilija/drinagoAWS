@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Drinago.Controllers
+namespace alphadrina.Controllers
 {
     public class InfoController : Controller
     {
@@ -23,17 +23,10 @@ namespace Drinago.Controllers
             return View("~/Views/Info/Archeology.cshtml");
         }
 
-      /*  public ActionResult History()
-        {
-            //return View("~/Views/Info/History.cshtml");
-            HistoryContext db = new HistoryContext();
-
-            return View(db.Sadrzajs.ToList());
-        }*/
-
         public ActionResult History()
         {
-            return View("~/Views/Info/History.cshtml");
+            HistoryContext db = new HistoryContext();
+            return View(db.Histories.ToList());
         }
 
         public ActionResult Geography()
