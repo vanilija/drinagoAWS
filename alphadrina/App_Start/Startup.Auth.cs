@@ -58,11 +58,11 @@ namespace alphadrina
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            ///   ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+               ClientId = "865102162128-6il3heq8u2baf8m40ie4m8p4fmlbccb3.apps.googleusercontent.com",
+               ClientSecret = "wad3a53-0u61czmmsGvbI8Ts"
+            });
         }
     }
 }

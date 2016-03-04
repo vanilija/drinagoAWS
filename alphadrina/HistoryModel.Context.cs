@@ -26,5 +26,6 @@ namespace alphadrina
         }
     
         public virtual DbSet<History> Histories { get; set; }
+        public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
     }
 }
