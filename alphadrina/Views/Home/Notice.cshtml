@@ -2,17 +2,12 @@
     ViewBag.Title = "Notice";
 
 }
-
 @{
     ViewBag.Header = "General Notice";
 }
 
-<!-- ======== CAROUSEL =========-->
 <body class="aboutsadrzaj">
     <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-
-        <!-- Wrapper for slides -->
-
         <div class="carousel-inner">
             <div class="item slides active">
                 <div class="slide-2"></div>
@@ -25,24 +20,22 @@
         </div>
     </div>
 
-    <!-- ========== END OF CAROUSEL ========== -->
     <!-- ========== Notice ========== -->
 
     <div class="section1">
         <div class="col s12 m8 offset-m2 l6 offset-l3">
-            <h3>@ViewBag.Message</h3>
+            <h3>@ViewBag.Header</h3>
             <hr />
             <p align="justify">
                 This is an early alpha stage of the website.
                 We have chosen to build our website using ASP.NET MVC.
                 Please, any errors you may encounter, let me know at: test@test.com, thanks!
                 This website uses bootstrap framework, which means that it's responsive out of the box, so you can use it on any device you want.
-                This website is dedicated to the tourists who are visiting or who are wishing to visit Bosnia, and in this case, the small town of Gorazde. <br />
+                This website is dedicated to the tourists who are visiting or who are wishing to visit Bosnia, and in this case, the small town of Gorazde. 
                 The point of the website is to introduce tourists to the town of Gorazde, people of Gorazde, culture of Gorazde and so forth.
             </p>
         </div>
     </div>
-
 </body>
 <style>
     .section1,

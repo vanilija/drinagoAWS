@@ -2,20 +2,15 @@
     ViewBag.Title = "About Drinago";
 
 }
-
 @{
-    ViewBag.Message = "Editor's Notice";
-    ViewBag.Message2 = "Our Vision";
-    ViewBag.Message3 = "Notice about registration";
-    ViewBag.Message4 = "Team behind the project";
+    ViewBag.Header = "Editor's Notice";
+    ViewBag.Vision = "Our Vision";
+    ViewBag.Registration = "Notice about registration";
+    ViewBag.Team = "Team behind the project";
 }
 
-<!-- ======== CAROUSEL =========-->
 <body class="aboutsadrzaj">
     <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-
-        <!-- Wrapper for slides -->
-
         <div class="carousel-inner">
             <div class="item slides active">
                 <div class="slide-2"></div>
@@ -27,13 +22,10 @@
             </div>
         </div>
     </div>
-
-    <!-- ========== END OF CAROUSEL ========== -->
     <!-- ========== Editor's Notice ========== -->
-
     <div class="section1">
         <div class="col s12 m8 offset-m2 l6 offset-l3">
-            <h3>@ViewBag.Message</h3>
+            <h3>@ViewBag.Header</h3>
             <hr />
             <p align="justify">
                 This is an early alpha stage of the website. We have chosen to build our website using ASP.NET MVC. Please, any errors you may encounter, let me know at: test@test.com, thanks! This website uses bootstrap framework, which means that it's responsive out of the box, so you can use it on any device you want. This website is dedicated to the tourists who are visiting or who are wishing to visit Bosnia, and in this case, the small town of Gorazde. The point of the website is to introduce tourists to the town of Gorazde, people of Gorazde, culture of Gorazde and so forth.
@@ -46,7 +38,7 @@
 
     <div class="section2">
         <div class="col s12 m8 offset-m2 l6 offset-l3">
-            <h3>@ViewBag.Message2</h3>
+            <h3>@ViewBag.Vision</h3>
             <hr />
             <p align="justify">
                 This website was created to focus on introducing the potential which whom this region is rich. Drinago is a team who is always watching top trends in the world, which is really important. It promotes seasonal and out of season information in the world. Mainly informs curious possible visitors to Gorazde about nature potential, clean air, suitable climate, preservation of environment, forests and mountains scope, flora and fauna richness.
@@ -63,12 +55,12 @@
 
     <div class="section4">
         <div class="col s12 m8 offset-m2 l6 offset-l3">
-            <h3>@ViewBag.Message3</h3>
+            <h3>@ViewBag.Registration</h3>
             <hr />
             <p align="justify">
-                For now registration is <b>enabled</b>, it is still in testing phase, and it is buggy. Our vision is that users should be able to register an account, upload photos, and leave reviews for places they visit.
+                For now registration is <b>DISABLED</b>, it is still in testing phase, and it is buggy. Our vision is that users should be able to register an account, upload photos, and leave reviews for places they visit.
                 <br />
-                Report any issues you encounter on our <a class="linkgithub" href="https://github.com/vanilija/asp.net_dri"><b>Github page</b></a>
+                Report any issues you encounter on our <a class="linkgithub" href="https://github.com/vanilija/drinagoAWS"><b>Github page</b></a>
             </p>
         </div>
     </div>
@@ -77,24 +69,15 @@
 
     <div class="section4">
         <div class="col s12 m8 offset-m2 l6 offset-l3">
-            <h3>@ViewBag.Message4</h3>
+            <h3>@ViewBag.Team</h3>
             <hr />
             <p align="justify">
-                Meet the Drinago team. For now this is not available due closed state od the project. In the near future this will be available.
+                Meet the Drinago team. For now this is <b>not available</b> due closed state od the project. In the near future this will be available.
             </p>
         </div>
     </div>
 
-
-    <div class="section5">
-        <div class="col s12 m8 offset-m2 16 offset-l3">
-            <h3></h3>
-            <hr />
-            <p align="justify">
-
-            </p>
-        </div>
-    </div>
+ 
 </body>
 <style>
     .section1,
@@ -112,7 +95,7 @@
     }
 
     .aboutsadrzaj {
-        background:url(https://github.com/Nurdoidz/Typogra-Voat/blob/master/Img/Bg-1.png?raw=true);
+        background: url(https://github.com/Nurdoidz/Typogra-Voat/blob/master/Img/Bg-1.png?raw=true);
     }
 
     .linkgithub {

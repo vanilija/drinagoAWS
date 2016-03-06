@@ -1,19 +1,13 @@
 ﻿@{
     ViewBag.Title = "Geography";
 }
-
 @{
-    ViewBag.Message = "Geography information about Gorazde";
+    ViewBag.Header = "Geography information about Gorazde";
 
 }
 
-<!-- ========== SADRZAJ in CSS is created for material design purpose only ========== -->
-<!-- ======== CAROUSEL =========-->
-
 <body class="infosadrzaj">
     <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-
-        <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item slides active">
                 <div class="slide-1"></div>
@@ -38,10 +32,8 @@
         </div>
     </div>
 
-    <!-- ========= END OF CAROUSEL ========== -->
-
     <div class="sadrzaj">
-        <h3>@ViewBag.Message</h3>
+        <h3>@ViewBag.Header</h3>
         <hr />
         <p align="justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis augue consectetur, laoreet metus eu, euismod ligula.

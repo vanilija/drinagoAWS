@@ -145,7 +145,11 @@ font-family: 'Roboto', sans-serif;
 
 .fade-carousel .slides .slide-1,
 .fade-carousel .slides .slide-2,
-.fade-carousel .slides .slide-3 {
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4,
+.fade-carousel .slides .slide-5,
+.fade-carousel .slides .slide-6,
+.fade-carousel .slides .slide-7 {
     height: 50vh;
     background-size: cover;
     background-position: center center;
@@ -157,28 +161,28 @@ font-family: 'Roboto', sans-serif;
     filter: blur(0.2px); */
 }
 
+/*Slider picture links are below*/
 .fade-carousel .slides .slide-1 {
     background-image: url(http://i.imgur.com/R90vJw9.jpg);
 }
-
 .fade-carousel .slides .slide-2 {
     background-image: url(http://i.imgur.com/xVeMS1n.jpg);
 }
-
 .fade-carousel .slides .slide-3 {
     background-image: url(http://i.imgur.com/7tu5zvq.jpg);
 }
 .fade-carousel .slides .slide-4 {
     background-image: url(http://i.imgur.com/P6R1Ybb.jpg);
 }
-
 .fade-carousel .slides .slide-5 {
     background-image: url(http://i.imgur.com/FlmNF8T.jpg);
 }
 .fade-carousel .slides .slide-6 {
     background-image: url(http://i.imgur.com/HLzA6KA.jpg);
 }
-
+.fade-carousel .slides .slide-7 {
+    background-image: url(http://i.imgur.com/PUcIEtm.jpg);
+}
 
 
 /********************************/

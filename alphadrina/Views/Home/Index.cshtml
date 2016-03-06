@@ -1,18 +1,14 @@
-﻿<!-- C# Code -->
-@{
+﻿@{
     ViewBag.Title = "Drinago";
 }
-
 @{
-    ViewBag.Message = "Hi";
-    ViewBag.Message2 = "Topographical position";
-    ViewBag.Message3 = "Area of Gorazde";
+    ViewBag.Hi = "Hi";
+    ViewBag.Position = "Topographical position";
+    ViewBag.Area = "Area of Gorazde";
 }
 
-<!-- ======== CAROUSEL =========-->
 <body class="indexsadrzaj">
     <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-
         <div class="carousel-inner">
             <div class="item slides active">
                 <div class="slide-3"></div>
@@ -26,42 +22,16 @@
                     </form>
                 </div>
             </div>
-           <!-- <div class="item slides">
-                <div class="slide-2"></div>
-                <div class="hero">
-                    <hgroup>
-                        <h1 class="white">Explore</h1>
-                        <h3 class="white">Explore region of Drinago with our help</h3>
-                    </hgroup>
-                    <form style="display: inline" action="http://52.29.34.251/Home/Notice" method="get">
-                        <button class="btn btn-hero btn-lg" role="button">Learn more</button>
-                    </form>
-                </div>
-            </div>
-            <div class="item slides">
-                <div class="slide-3"></div>
-                <div class="hero">
-                    <hgroup>
-                        <h1 class="white">Things to do</h1>
-                        <h3 class="white">Click on the dropdown menu, to learn more</h3>
-                    </hgroup>
-                    <form style="display: inline" action="http://52.29.34.251/Home/Notice" method="get">
-                        <button class="btn btn-hero btn-lg" role="button">Learn more</button>
-                    </form>
-                </div>
-            </div>
-        </div>-->
-    </div>
         </div>
+    </div>
 
-    <!-- ========= END OF CAROUSEL ========== -->
-    <!-- ========== ROW ONE ========== -->
+    <!-- row one -->
 
     <div class="SadrzajIndex">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4">
-                    <h4 align="center">@ViewBag.Message</h4>
+                    <h4 align="center">@ViewBag.Hi</h4>
                     <hr />
                     <p align="justify">
                         <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
@@ -78,10 +48,10 @@
                         Feel free to explore the website, if  you have any questions, be sure to check the Info section, or About section.
                         Drinago wishes you a pleasant stay.
                     </p>
-                    <p><a class="btn btn-default" href="http://52.29.34.251/Home/Notice">Learn more</a></p>
+                    <p><a class="btn btn-default" href="http://drinago.eu-central-1.elasticbeanstalk.com/home/notice">Learn more</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h4 align="center">@ViewBag.Message2</h4>
+                    <h4 align="center">@ViewBag.Position</h4>
                     <hr />
                     <p align="justify">
                         <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
@@ -101,10 +71,10 @@
                         </ul>
                         Highest peak in the vicinity of the town is (Sjenokos - 960 meters).
                     </p>
-                    <p><a class="btn btn-default" href="http://52.29.34.251/Home/Notice">Learn more</a></p>
+                    <p><a class="btn btn-default" href="http://drinago.eu-central-1.elasticbeanstalk.com/home/notice">Learn more</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h4 align="center">@ViewBag.Message3</h4>
+                    <h4 align="center">@ViewBag.Area</h4>
                     <hr />
                     <p align="justify">
                         <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
@@ -118,7 +88,7 @@
                         Settlement of Goražde in history was the main intersection of roads leading to Dalmatian coast, Serbia, Montenegro and Sarajevo.
                         Greater significance Goražde recieved during the road reconstruction (Foča - Goražde) in 1887.
                     </p>
-                    <p><a class="btn btn-default" href="http://drinago.azurewebsites.net/Home/Notice">Learn more</a></p>
+                    <p><a class="btn btn-default" href="http://drinago.eu-central-1.elasticbeanstalk.com/home/notice">Learn more</a></p>
                 </div>
             </div>
         </div>
@@ -126,4 +96,3 @@
 </body>
 
 <!-- ========== END OF ROW ONE ========== -->
-<!-- End of Index.cshtml code -->

@@ -4,26 +4,11 @@
 }
 
 @{
-    ViewBag.Message = "What is available for visit?";
+    ViewBag.Header = "What is available for visit?";
+    ViewBag.SubHeader = "Idea for showing place to stay, goes like this, text below is just an example:";
 }
 
-@*<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-    <div class="carousel-inner">
-        <div class="item slides active">
-            <div class="slide-2"></div>
-            <div class="slider">
-                <hgroup>
-                    <h1>What to do?</h1>
-                    <h3>Enjoy your stay</h3>
-                </hgroup>
-            </div>
-        </div>
-    </div>
-</div>*@
-
 <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-
-    <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item slides active">
             <div class="slide-1"></div>
@@ -31,7 +16,6 @@
                 <hgroup>
                     <h1 class="white">What to do?</h1>
                     <h4 class="white">Activities to do while staying in Goražde</h4>
-                    <h5 class="white">Click on Learn more, for more information</h5>
                 </hgroup>
                 <form style="display: inline" action="http://drinago.eu-central-1.elasticbeanstalk.com/home/notice" method="get">
                     <button class="btn btn-hero btn-lg" role="button">Learn more</button>
@@ -43,11 +27,10 @@
 
 <!-- ========== Things to do ========== -->
 
-
 <div class="sadrzaj">
-    <h3>@ViewBag.Message</h3>
+    <h3>@ViewBag.Header</h3>
     <hr />
-    <h4>Idea for showing place to stay, goes like this, text below is just an example:</h4>
+    <h4>@ViewBag.SubHeader</h4>
     <p>
         Few sentences about place of interest no more than, three or four, if the place is for example hotel, include things like:
         <ul>

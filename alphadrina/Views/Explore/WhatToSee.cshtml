@@ -2,59 +2,14 @@
     ViewBag.Title = "What to see";
 
 }
-
 @{
-    ViewBag.Message = "What to See";
-    ViewBag.Message1 = "Goršić Polje";
-    ViewBag.Message2 = "War Memorial - Rorovi";
-    ViewBag.Message3 = "Roman Bridge";
+    ViewBag.Header = "What to See";
+    ViewBag.GorsicPolje = "Goršić Polje";
+    ViewBag.Rorovi = "War Memorial - Rorovi";
+    ViewBag.Bridge = "Roman Bridge";
+    ViewBag.SubHeader = "Idea for showing place to stay, goes like this, text below is just an example:";
 
 }
-@*<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#bs-carousel" data-slide-to="1"></li>
-        <li data-target="#bs-carousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div class="item slides active">
-            <div class="slide-1"></div>
-            <div class="hero">
-                <hgroup>
-                    <h1 class="white">What to see</h1>
-                    <h3 class="white">Interesting places around Drinago</h3>
-                </hgroup>
-                <button class="btn btn-hero btn-lg" role="button">Learn more</button>
-            </div>
-        </div>
-        <div class="item slides">
-            <div class="slide-2"></div>
-            <div class="hero">
-                <hgroup>
-                    <h1 class="white">Explore</h1>
-                    <h3 class="white">Explore region of Drinago with our help</h3>
-                </hgroup>
-
-                <form style="display: inline" action="http://52.29.34.251/Home/Info" method="get">
-                    <button class="btn btn-hero btn-lg" role="button">Learn more</button>
-                </form>
-            </div>
-        </div>
-        <div class="item slides">
-            <div class="slide-3"></div>
-            <div class="hero">
-                <hgroup>
-                    <h1 class="white">Things to do?</h1>
-                    <h3 class="white">Click on the dropdown menu, to learn more</h3>
-                </hgroup>
-                <button class="btn btn-hero btn-lg" role="button">Learn more</button>
-            </div>
-        </div>
-    </div>
-</div>*@
 
 <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
     <div class="carousel-inner">
@@ -73,13 +28,15 @@
 <!-- ========== What to see ========== -->
 
 <div class="sadrzaj">
-    <h3>@ViewBag.Message</h3>
+    <h3>@ViewBag.Header</h3>
     <hr />
-    <h4>Idea for showing place to stay, goes like this, text below is just an example:</h4>
+    <h4>@ViewBag.SubHeader</h4>
     <p>
         Add info below for certain areas.
         <ul>
-            <li>Include working hours, does it have WIFI etc.</li>
+            <li>Include working hours.</li>
+            <li>Does the place have a phone number</li>
+            <li>WIFI availability</li>
             <li>Include few pictures, or just one, then when users click on Learn more button, take them to a new page with more detailed information about the place.</li>
         </ul>
     </p>
@@ -92,34 +49,29 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
-                <h4 align="center">@ViewBag.Message1</h4>
+                <h4 align="center">@ViewBag.GorsicPolje</h4>
                 <hr />
                 <p align="justify">
                     <img class="img-responsive center-block" src="http://i.imgur.com/kNozhBs.jpg" />
                     <br />
-
-                    <br />
                 </p>
                 <p><a class="btn btn-default" href="http://52.29.34.251/Home/Notice">Learn more</a></p>
             </div>
             <div class="col-md-3">
-                <h4 align="center">@ViewBag.Message2</h4>
+                <h4 align="center">@ViewBag.Rorovi</h4>
                 <hr />
                 <p align="justify">
                     <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
                     <br />
-
-                    <br />
                 </p>
                 <p><a class="btn btn-default" href="http://52.29.34.251/Home/Notice">Learn more</a></p>
             </div>
             <div class="col-md-3">
-                <h4 align="center">@ViewBag.Message3</h4>
+                <h4 align="center">@ViewBag.Bridge</h4>
                 <hr />
                 <p align="justify">
                     <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
                     <br />
-
                     <br />
                 </p>
                 <p><a class="btn btn-default" href="http://52.29.34.251/Home/Notice">Learn more</a></p>
@@ -146,7 +98,6 @@
                 <p align="justify">
                     <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
                     <br />
-
                     <br />
                 </p>
                 <p><a class="btn btn-default" href="http://52.29.34.251/Home/Notice">Learn more</a></p>
@@ -157,7 +108,6 @@
                 <p align="justify">
                     <img class="img-responsive center-block" src="http://i.imgur.com/62eDcbs.jpg" />
                     <br />
-
                     <br />
                 </p>
                 <p><a class="btn btn-default" href="http://52.29.34.251/Home/Notice">Learn more</a></p>
@@ -168,7 +118,6 @@
                 <p align="justify">
                     <img class="img-responsive center-block" src="http://i.imgur.com/IitkXgH.jpg" />
                     <br />
-
                     <br />
                 </p>
                 <p><a class="btn btn-default" href="http://52.29.34.251/Home/">Learn more</a></p>
@@ -179,7 +128,6 @@
                 <p align="justify">
                     <img class="img-responsive center-block" src="http://i.imgur.com/2hAJxMV.jpg" />
                     <br />
-
                     <br />
                 </p>
                 <p><a class="btn btn-default" href="http://52.29.34.251/Home/Notice">Learn more</a></p>

@@ -1,34 +1,28 @@
 ﻿@{
     ViewBag.Title = "Basic Information";
 }
-
 @{
-    ViewBag.Message = "Basic Information";
-    ViewBag.Message1 = "Population";
-    ViewBag.Message2 = "Area of Gorazde";
-    ViewBag.Message3 = "Timezone";
-    ViewBag.Message4 = "Climate";
-    ViewBag.Message5 = "Ethnicity and religion";
-    ViewBag.Message6 = "Electricity";
-    ViewBag.Message7 = "Water";
-    ViewBag.Message8 = "Currency";
-    ViewBag.Message9 = "Working Hours";
-    ViewBag.Message10 = "General Numbers";
-    ViewBag.Message11 = "Holidays";
+    ViewBag.Header = "Basic Information";
+    ViewBag.Population = "Population";
+    ViewBag.Area = "Area of Gorazde";
+    ViewBag.TimeZone = "Timezone";
+    ViewBag.Climate = "Climate";
+    ViewBag.Ethnrel = "Ethnicity and religion";
+    ViewBag.Electr = "Electricity";
+    ViewBag.Water = "Water";
+    ViewBag.Currency = "Currency";
+    ViewBag.Wrkhrs = "Working Hours";
+    ViewBag.Gnbr = "General Numbers";
+    ViewBag.Holy = "Holidays";
 }
-
-<!-- ========== SADRZAJ in CSS is created for material design purpose only ========== -->
-<!-- ======== CAROUSEL =========-->
 <body class="infosadrzaj">
     <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-        <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#bs-carousel" data-slide-to="1"></li>
             <li data-target="#bs-carousel" data-slide-to="2"></li>
         </ol>
 
-        <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item slides active">
                 <div class="slide-1"></div>
@@ -65,43 +59,33 @@
             </div>
         </div>
     </div>
-
-    <!-- ========= END OF CAROUSEL ========== -->
-
     <div class="sadrzaj">
-        <h3>@ViewBag.Message</h3>
+        <h3>@ViewBag.Header</h3>
         <p>Here is some basic information about Gorazde that you should know.</p>
     </div>
-
     <br />
     <div class="sadrzaj">
-        <h3>@ViewBag.Message1</h3>
+        <h3>@ViewBag.Population</h3>
         <hr />
         <p>City of Gorazde 16,273 (1991), 12,512 (2013)</p>
         <p>Municipality of Gorazde 37,573 (1991), 22,000 (2013)</p>
     </div>
-
     <br />
-
     <div class="sadrzaj">
-        <h3>@ViewBag.Message2</h3>
+        <h3>@ViewBag.Area</h3>
         <hr />
         <p>City of Gorazde - 2.335918mi<sup>2</sup> / 6.05km<sup>2</sup></p>
         <p>Municipality of Gorazde - 96.062217mi<sup>2</sup> / 248, 8km<sup>2</sup></p>
     </div>
-
     <br />
-
     <div class="sadrzaj">
-        <h3>@ViewBag.Message3</h3>
+        <h3>@ViewBag.TimeZone</h3>
         <hr />
         <p>The time zone in Gorazde is Central European Time (CET+1)</p>
     </div>
-
     <br />
-
     <div class="sadrzaj">
-        <h3>@ViewBag.Message4</h3>
+        <h3>@ViewBag.Climate</h3>
         <hr />
         <p align="justify">
             The climate in Gorazde by Wolfgang Koeppen is moderately humid, without dry seasons with warm summers.
@@ -109,44 +93,36 @@
             Also the average temperature fluctation is +-68F / +-20°C. The average temperature of river Drina is 46.4F / 8°C.
         </p>
     </div>
-
     <br />
-
     <div class="sadrzaj">
-        <h3>@ViewBag.Message5</h3>
+        <h3>@ViewBag.Ethnrel</h3>
         <hr />
         <p align="justify">
             Gorazde is multiethnical and multireligious city in which are most dominant group Bosnjaci (Muslims - Bosniaks), Serbs (Orthodox) and Croats (Catholics) and others.
             Before the second world war the jews lived in Gorazde. One of the most famous jew was Isak Samokovlija, the first doctor in the city who  was educated in Vienna.
         </p>
     </div>
-
     <br />
-
     <div class="sadrzaj">
-        <h3>@ViewBag.Message6</h3>
+        <h3>@ViewBag.Electr</h3>
         <hr />
         <p align="justify">
             Electrical energy in Bosnia and Herzegovina has a standard voltage of 220v and frequency of 50Hz.
             Please check your devices and see if they comply with the standard before using them.
         </p>
     </div>
-
     <br />
-
     <div class="sadrzaj">
-        <h3>@ViewBag.Message7</h3>
+        <h3>@ViewBag.Water</h3>
         <hr />
         <p align="justify">
             Drina as a river represents second category of watercours by the water quality, which means
             that is is possible to bathe in the river, catch fish and to have fun.
         </p>
     </div>
-
     <br />
-
     <div class="sadrzaj">
-        <h3>@ViewBag.Message8</h3>
+        <h3>@ViewBag.Currency</h3>
         <hr />
         <p align="justify">
             Bosnian mark (BAM), convertible mark (KM) is the official currency is Bosnia and Herzgeovina.
@@ -154,13 +130,10 @@
             desirable to exchange your currency right away on arrival to Bosnia and Herzegovina.
         </p>
     </div>
-
     <br />
-
     <div class="sadrzaj">
-        <h3>@ViewBag.Message9</h3>
+        <h3>@ViewBag.Wrkhrs</h3>
         <hr />
-
         <p><b>Please take note that these working hours are for most of the privately owned businesses.</b></p>
         <p align="justify">Monday - Friday (07:00h - 23:00h) (7:00am - 11:00pm).</p>
         <p>Saturday (07:00h - 23:00) (7:00am - 11:00pm)</p>
@@ -170,11 +143,9 @@
         <p>Monday - Friday (08:00h - 16:00h) (8:00am - 4:00pm)</p>
         <p>Saturday - Sunday (closed)</p>
     </div>
-
     <br />
-
     <div class="sadrzaj">
-        <h3>@ViewBag.Message10</h3>
+        <h3>@ViewBag.Gnbr</h3>
         <hr />
         <p>Numbers that you should know are as follows:</p>
         <ul>
@@ -183,7 +154,17 @@
             <li>Postal code for Gorazde is: 73000</li>
         </ul>
     </div>
-
+    <br />
+    <div class="sadrzaj">
+        <h3>@ViewBag.Holy</h3>
+        <hr />
+        <p>Holydays in Bosnia and Herzegovina are as following</p>
+        <ul>
+            <li>HolidayName and date</li>
+            <li>HolidayName and date</li>
+            <li>HolidayName and date</li>
+        </ul>
+    </div>
 </body>
 
 <style>
