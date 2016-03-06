@@ -226,15 +226,6 @@
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
     <EntityDeploy Include="HistoryModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>HistoryModel.Designer.cs</LastGenOutput>
@@ -255,7 +246,6 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -295,10 +285,17 @@
     <Content Include="Views\Travel\Seasons.cshtml" />
     <Content Include="Views\Travel\Transportation.cshtml" />
     <Content Include="Views\Info\History.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\History\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
