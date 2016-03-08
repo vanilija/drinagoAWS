@@ -184,7 +184,6 @@ font-family: 'Roboto', sans-serif;
     background-image: url(http://i.imgur.com/PUcIEtm.jpg);
 }
 
-
 /********************************/
 /*          Media Queries       */
 /********************************/
@@ -214,24 +213,9 @@ font-family: 'Roboto', sans-serif;
     max-height: 225px;
 }
 
-/*h1, h2, h3, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    color: white;
-}*/
-
 .white {
     color: white;
 }
-
-
-/*.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-    color: black;
-    background-color: orange;
-}
-
-div.navbar-collapse {
-    background-color: blue;
-}*/
-
 
 /*========== END OF CUSTOM ==========*/
 

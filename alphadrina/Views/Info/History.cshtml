@@ -8,34 +8,41 @@
     ViewBag.Hint = "Short Notice";
     ViewBag.Notice = "For now this text area is in Bosnian. We are in translating process.";
 }
-
-<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-    <div class="carousel-inner">
-        <div class="item slides active">
-            <div class="slide-1"></div>
-            <div class="hero">
-                <hgroup>
-                    <h1 class="white">@ViewBag.Header</h1>
-                </hgroup>
+<body class="History">
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+        <div class="carousel-inner">
+            <div class="item slides active">
+                <div class="slide-1"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1 class="white">@ViewBag.Header</h1>
+                    </hgroup>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="sadrzaj" align="justify">
-    <h2>@ViewBag.Header</h2>
-    <h3>@ViewBag.Hint</h3>
-    <h5>@ViewBag.Notice</h5>
-    <hr />
-
-    <!-- Database code -->
-    @foreach (var item in Model)
-    {
-        @Html.DisplayFor(modelItem => item.History1)
+    <div class="sadrzaj" align="justify">
+        <h2>@ViewBag.Header</h2>
+        <h3>@ViewBag.Hint</h3>
+        <h5>@ViewBag.Notice</h5>
         <hr />
-        @Html.DisplayFor(modelItem => item.History2)
-        <hr />
-    }
-    <!-- Database code -->
-</div>
 
+        <!-- Database code -->
+        @foreach (var item in Model)
+        {
+            @Html.DisplayFor(modelItem => item.History1)
+            <hr />
+            @Html.DisplayFor(modelItem => item.History2)
+            <hr />
+        }
+        <!-- Database code -->
+    </div>
+
+</body>
+
+<style>
+   .History {
+        background: url(https://github.com/Nurdoidz/Typogra-Voat/blob/master/Img/Bg-1.png?raw=true);
+    } 
+</style>
