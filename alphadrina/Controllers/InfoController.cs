@@ -23,6 +23,7 @@ namespace alphadrina.Controllers
             return View("~/Views/Info/Archeology.cshtml");
         }
 
+        /*Database connection string*/
         public ActionResult History()
         {
             HistoryContext db = new HistoryContext();
