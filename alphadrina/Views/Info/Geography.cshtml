@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<alphadrina.Geography>
+
+@{
     ViewBag.Title = "Geography";
 }
 @{
@@ -89,6 +91,16 @@
             Donec non risus in est vulputate porta dignissim id odio. Donec blandit nisl a ultricies fermentum. Donec dictum risus purus, a porta ligula condimentum ut.
         </p>
     </div>
+
+
+    <!-- Database code -->
+    @foreach (var item in Model)
+    {
+        @Html.DisplayFor(modelItem => item.Geography)
+            <hr />
+    }
+    <!-- Database code -->
+
 </body>
 
 <style>

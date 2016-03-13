@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<alphadrina.Archeology>
+
+@{
     ViewBag.Title = "Archeology";
 }
 
@@ -50,6 +52,16 @@
             <button class="btn btn-hero btn-lg" role="button">Learn more</button>
         </form>
     </div>
+
+
+
+    <!-- Database code -->
+    @foreach (var item in Model)
+    {
+        @Html.DisplayFor(modelItem => item.Archeology)
+        <hr />
+    }
+    <!-- Database code -->
 
 </body>
 

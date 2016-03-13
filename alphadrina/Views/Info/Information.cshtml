@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<alphadrina.Information>
+
+@{
     ViewBag.Title = "Basic Information";
 }
 @{
@@ -165,6 +167,16 @@
             <li>HolidayName and date</li>
         </ul>
     </div>
+
+
+    <!-- Database code -->
+    @foreach (var item in Model)
+    {
+        @Html.DisplayFor(modelItem => item.Information)
+        <hr />
+    }
+    <!-- Database code -->
+
 </body>
 
 <style>

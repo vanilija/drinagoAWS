@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<alphadrina.Geology>
+
+@{
     ViewBag.Title = "Geology";
 }
 @{
@@ -83,6 +85,15 @@
             Klisurasti dijelovi dolinskog prosirenja nemaju dobro razvijene serije terasa ali mnogi imaju epigenetski i acedentni karakter stim  da nije zabiljezeno ni jedna piraterija ni do danasnjih dana.
         </p>
     </div>
+
+    <!-- Database code -->
+    @foreach (var item in Model)
+    {
+        @Html.DisplayFor(modelItem => item.Geology)
+        <hr />
+    }
+    <!-- Database code -->
+
 </body>
 
 <style>
